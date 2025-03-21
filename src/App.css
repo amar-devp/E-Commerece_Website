@@ -7,13 +7,28 @@
 body {
   font-family: "Roboto", serif;
 }
-/* #root{zoom: 90%;} */
+#root {
+  zoom: 90%;
+}
 .container-fluid {
   padding: 0px 45px;
 }
-.cursor{
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+.cursor {
   cursor: pointer;
 }
 
-.bg-g,.bg-success{background: #3bb77e;}
-.text-g{color: #3bb77e;}
+.bg-g,
+.bg-success {
+  background: #3bb77e;
+}
+.text-g {
+  color: #3bb77e;
+}
+.hd {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
