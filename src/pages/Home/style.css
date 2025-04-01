@@ -1,5 +1,6 @@
 .homeProducts {
   padding: 25px 0px;
+  /* margin-bottom: -20px; */
 }
 .filterTab li {
   margin-left: 20px;
@@ -22,4 +23,18 @@
 .homeProducts .productRow .item {
   width: 20%;
   padding: 15px 15px;
+}
+
+.homeProductsRow2 .prodSlider .item {
+  padding: 10px 0px;
+  padding-right: 20px;
+}
+.homeProductsRow2 .prodSlider .productThumb{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.homeProductsRow2 .slick-arrow.slick-prev {
+  z-index: 1 !important;
+}
+.section2image {
+  height: 100%;
 }

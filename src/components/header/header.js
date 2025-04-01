@@ -55,17 +55,17 @@ const Header = () => {
     }
   };
 
-  // Header to be fixed
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     let position = window.pageYOffset;
-  //     if (position > 100) {
-  //       headerRef.current.classList.add("fixed");
-  //     } else {
-  //       headerRef.current.classList.remove("fixed");
-  //     }
-  //   });
-  // }, []);
+  // Header to be navigiation
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let position = window.pageYOffset;
+      if (position > 100) {
+        headerRef.current.classList.add("fixed");
+      } else {
+        headerRef.current.classList.remove("fixed");
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -193,6 +193,7 @@ const Header = () => {
         {/* Navigation */}
         <Nav />
       </div>
+      <div className="afterHeader"></div>
     </>
   );
 };

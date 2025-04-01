@@ -6,18 +6,25 @@ header {
   background: #fff;
 }
 .headerWrapper {
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+/* .headerWrapper {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: #fff;
-}
+} */
 .headerWrapper.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: #fff;
+  top: -124px;
+}
+.afterHeader {
+  margin-top: 210px;
 }
 header .headerSearch {
   width: 100%;
